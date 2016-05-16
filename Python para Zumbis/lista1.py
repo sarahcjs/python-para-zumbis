@@ -61,3 +61,24 @@ def q8():
     fahr = float(input('Digite a temperatura em ºFahrenheit: '))
     celsius = 5 * (fahr - 32) / 9
     print ('%.1f ºF = %.1f ºC.' % (fahr, celsius))
+
+#9
+def q9():
+    distancia = float(input('Km percorridos com o carro: '))
+    dias = int(input('Quantidade de dias alugados: '))
+    aluguel = dias * 60 + distancia * 0.15
+    print ('O preço a pagar pelo aluguel será R$%.2f.' % aluguel)
+
+#10
+def q10():
+    cigarrosdia = int(input('Quantos cigarros fuma por dia? '))
+    anosfumando = int(input('Por quantos anos já fumou? '))
+    qtdano = cigarrosdia * 365 * anosfumando
+    perderumdia = 6 * 24
+    diasperdidos = int(qtdano / perderumdia)
+    print ('Você perderá %d dias de vida! :(' % diasperdidos)
+
+#11
+def q11():
+    num = str(2**1000000)
+    print ('Dois elevado a um milhão tem %d dígitos!!!' % len(num))
